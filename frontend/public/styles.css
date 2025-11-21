@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 248, 255); /* Light Azure Blue for a soft professional look */
+}
+
+/* Container */
+#app {
+    display: none; /* Initially hidden until wallet is connected */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Connect Wallet Button */
+#connectWallet {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#connectWallet:hover {
+    background-color: #0056b3;
+}
+
+/* Form Inputs */
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Upload Button */
+#uploadButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#uploadButton:hover {
+    background-color: #218838;
+}
+
+/* Evidence List */
+#evidenceList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#evidenceList li {
+    background: rgb(255, 255, 255); /* Pure white for contrast */
+    margin: 10px 0;
+    padding: 15px 20px; /* Slightly wider padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Buttons inside Evidence List */
+#evidenceList button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#evidenceList button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+#evidenceList button:first-child:hover {
+    background-color: #0056b3;
+}
+
+#evidenceList button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+#evidenceList button:last-child:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #app {
+        width: 90%;
+    }
+
+    input, textarea {
+        width: calc(100% - 10px);
+    }
+}
